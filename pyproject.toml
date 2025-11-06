@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "primitive-db"
+version = "0.1.0"
+description = "Простая файловая база данных на Python"
+authors = ["Borovinskikh Kirill <petr999.9.0@yandex.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+prettytable = "^3.16.0"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.5.0"
+
+[tool.poetry.scripts]
+database = "src.primitive_db.main:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
